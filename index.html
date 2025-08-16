@@ -17,6 +17,17 @@
 
   <!-- Devicon (skill icons for Go/React/HTML/CSS/JS/Figma) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+  <script src="index.js"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "vDOmKd_DOQoB7-shD",
+      });
+    })();
+  </script>
 
   <style>
     :root {
@@ -271,16 +282,19 @@
       <div class="row align-items-center g-4">
 
         <div class="col-md-4 text-center">
-          <img src="./images/port3.jpg" class="img-fluid rounded-3 shadow-lg" alt="About Shinas" style="max-width: 300px;" />
+          <img src="./images/port3.jpg" class="img-fluid rounded-3 shadow-lg" alt="About Shinas"
+            style="max-width: 300px;" />
         </div>
 
         <div class="col-md-8">
           <h2 class="fw-bold" style="color:var(--accent);">About Me</h2>
           <p class="lead">
-            I'm <strong>Shinas Muhammed K</strong>, a BSc Computer Science graduate, currently a web development intern at
+            I'm <strong>Shinas Muhammed K</strong>, a BSc Computer Science graduate, currently a web development intern
+            at
             Bridgeon Solution.
           </p>
-          <p>Skilled in HTML, CSS, JavaScript, and UI design. I bring creativity and technical skills to every project.</p>
+          <p>Skilled in HTML, CSS, JavaScript, and UI design. I bring creativity and technical skills to every project.
+          </p>
         </div>
 
       </div>
@@ -409,7 +423,8 @@
 
         <div class="col-lg-3 col-md-6" data-aos="fade-up">
           <div class="card h-100 shadow-lg border-0">
-            <img src="./images/Screenshot 2025-08-14 185055.png" class="card-img-top" alt="MakeMyTrip Clone" style="height: 200px; object-fit: cover;">
+            <img src="./images/Screenshot 2025-08-14 185055.png" class="card-img-top" alt="MakeMyTrip Clone"
+              style="height: 200px; object-fit: cover;">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title fw-bold">Clone of MakeMyTrip</h5>
               <p class="card-text flex-grow-1">
@@ -426,7 +441,8 @@
 
         <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
           <div class="card h-100 shadow-lg border-0">
-            <img src="./images/Screenshot 2025-08-14 185628.png" class="card-img-top" alt="W3Schools NavBar" style="height: 200px; object-fit: cover;">
+            <img src="./images/Screenshot 2025-08-14 185628.png" class="card-img-top" alt="W3Schools NavBar"
+              style="height: 200px; object-fit: cover;">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title fw-bold">W3Schools NavBar</h5>
               <p class="card-text flex-grow-1">
@@ -443,7 +459,8 @@
 
         <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
           <div class="card h-100 shadow-lg border-0">
-            <img src="./images/Screenshot 2025-08-14 185922.png" class="card-img-top" alt="Bank Balance Checker" style="height: 200px; object-fit: cover;">
+            <img src="./images/Screenshot 2025-08-14 185922.png" class="card-img-top" alt="Bank Balance Checker"
+              style="height: 200px; object-fit: cover;">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title fw-bold">Bank Balance Checker</h5>
               <p class="card-text flex-grow-1">
@@ -461,7 +478,8 @@
 
         <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
           <div class="card h-100 shadow-lg border-0">
-            <img src="./images/Screenshot 2025-08-15 194623.png" class="card-img-top" alt="Personal Portfolio" style="height: 200px; object-fit: cover;">
+            <img src="./images/Screenshot 2025-08-15 194623.png" class="card-img-top" alt="Personal Portfolio"
+              style="height: 200px; object-fit: cover;">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title fw-bold">Personal Portfolio</h5>
               <p class="card-text flex-grow-1">
@@ -565,7 +583,7 @@
                       required></textarea>
                   </div>
                   <div class="col-12">
-                    <button type="submit" class="btn btn-primary btn-lg w-100">
+                    <button type="submit" class="btn btn-primary btn-lg w-100" onclick="sendMail()">
                       Send Message
                     </button>
                   </div>
